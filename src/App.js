@@ -7,7 +7,7 @@ import './App.css'
 const App = () => {
   //console.log('render')
   const [aramaAlanı, setAramaAlanı] = useState('') //value, setValue
-  const [title, setTitle] = useState('')
+  const [title, setTitle] = useState('Canavarlar')
   const [canavarlar, setCanavarlar] = useState([])
   //const [dizeAlanı, setDizeAlanı] = useState('')
   const [filtrelenmişCanavarlar, setFiltrelenmişCanavarlar] = useState(
@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="app-title">Canavarlar</h1>
+      <h1 className="app-title">{title}</h1>
       <SearchBox
         onChangeHandler={aramaDeğişikliği}
         placeholder="canavarları ara"
